@@ -131,7 +131,7 @@ mkdir -p $RPM_BUILD_ROOT/%{_kde4_appsdir}/desktoptheme/
 cp -rp kde-desktoptheme/* $RPM_BUILD_ROOT/%{_kde4_appsdir}/desktoptheme/
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/%{name}
-cp -a fedora/*.svg $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -a springdale/*.svg $RPM_BUILD_ROOT%{_datadir}/%{name}
 
 # save some dup'd icons
 /usr/sbin/hardlink -v %{buildroot}/
