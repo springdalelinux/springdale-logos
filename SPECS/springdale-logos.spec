@@ -90,10 +90,6 @@ pushd $RPM_BUILD_ROOT%{_sysconfdir}
 ln -s %{_datadir}/icons/hicolor/16x16/apps/fedora-logo-icon.png favicon.png
 popd
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps
-install -p -m 644 icons/hicolor/scalable/apps/xfce4_xicon1.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps
-install -p -m 644 icons/hicolor/scalable/apps/fedora-logo-icon.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/start-here.svg
-
 (cd anaconda; make DESTDIR=$RPM_BUILD_ROOT install)
 
 for i in 16 22 24 32 36 48 96 256 ; do
@@ -217,8 +213,6 @@ glib-compile-schemas %{_datadir}/glib-2.0/schemas &> /dev/null || :
 %dir %{_datadir}/icons/hicolor/96x96/apps/
 %dir %{_datadir}/icons/hicolor/256x256/
 %dir %{_datadir}/icons/hicolor/256x256/apps/
-%dir %{_datadir}/icons/hicolor/scalable/
-%dir %{_datadir}/icons/hicolor/scalable/apps/
 %dir %{_datadir}/anaconda
 %dir %{_datadir}/anaconda/pixmaps
 %dir %{_datadir}/anaconda/boot/
