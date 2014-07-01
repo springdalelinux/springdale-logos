@@ -1,10 +1,10 @@
 %global codename verne
-%global dist .el7.sdl
+%global dist .sdl7
 
 Name: springdale-logos
 Summary: Springdale-related icons and pictures
 Version: 70.0.5 
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: System Environment/Base
 URL: http://springdale.princeton.edu
 # No upstream, done in internal git
